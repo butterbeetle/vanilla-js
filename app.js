@@ -1,23 +1,24 @@
-const calcultor = {
-    add: function( a, b ){
-        return a+b;
-    },
-    minus: function( a, b ){
-        return a-b;
-    },
-    multiple: function( a, b ){
-        return a*b;
-    },
-    divide: function( a, b ){
-        return a/b;
-    },
-    pow: function( a, b ){
-        return a**b;
-    }
-};
+const age = parseInt( prompt( "How old are you?" ) );
 
-const plusResult = calcultor.add( 2, 3 );
-const minusResult = calcultor.minus( plusResult, 10 );
-const MutipleResult = calcultor.multiple( 10, minusResult );
-const divideResult = calcultor.divide( MutipleResult, plusResult );
-const powResult = calcultor.pow( divideResult, minusResult );
+if( isNaN( age ) || age < 0 )
+{
+    console.log( "Please write a real positive number");
+}
+else if( age < 18 ){
+    console.log( "You are too young");
+}
+else if( age >= 18 && age <= 50 )
+{
+    console.log( "You can drink");
+}
+else if( age > 50 && age <= 80 )
+{
+    console.log( "You should exercise");
+}
+else if( age > 80 )
+{
+    console.log( "Bye..");
+}
+else{
+    console.log("You can't drink");
+}
