@@ -1,9 +1,9 @@
-const week = ["mon","tue","wed","thu","fri",'sat'];
+const player = {
+    name:"nico",
+    points: 10,
+    fat: true,
+};
 
-console.log( week );
-// get item from array
-console.log( week[1] );
-
-//add one more day to the array
-week.push( "sun" );
-console.log( week );
+player.fat = false;
+player.lastName = "potato";
+console.log( player );
