@@ -1,13 +1,9 @@
+const week = ["mon","tue","wed","thu","fri",'sat'];
 
-let a = 5; 
-let b = 2; 
-let myName = "KSH";
+console.log( week );
+// get item from array
+console.log( week[1] );
 
-console.log( a + b );
-console.log( a * b );
-console.log( a / b );
-console.log("hello " + myName);
-
-myName = "KKK";
-
-console.log("hello " + myName);
+//add one more day to the array
+week.push( "sun" );
+console.log( week );
