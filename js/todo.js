@@ -24,12 +24,12 @@ function paintTodo(newTodo){
     const span = document.createElement("span");
     span.innerText = newTodo.text;
 
-    const button = document.createElement("button");
-    button.innerText = "✖";
-    button.addEventListener("click", deleteTodo);
+    const i = document.createElement(`i`);
+    i.className=`fas fa-times fa-2x`;
+    i.addEventListener("click", deleteTodo);
 
+    li.appendChild(i);
     li.appendChild(span);
-    li.appendChild(button);
 
     toDoList.appendChild(li);
 }

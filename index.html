@@ -3,35 +3,48 @@
   <head>
     <title>Vanilla Challenge</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Momentum App</title>
   </head>
 
   <body>
-    <h1 id="greeting" class="hidden"></h1>
-    <h2 id="clock">00:00:00</h2>
-    <form class="login-form hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <input type="submit" value="Log In" />
-    </form>
-
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do" required />
-    </form>
-
-    <ul id="todo-list"></ul>
-
-    <div id="quote">
+    <div id="weather">
       <span></span>
       <span></span>
     </div>
 
-    <div id="weather">
+    <div class="clock-div">
+      <h2 id="clock">00:00:00</h2>
+    </div>
+
+    <header class="welcome">
+      <h1 class="welcome_title hidden">Welcome, stranger~!!</h1>
+      <h1 id="greeting" class="hidden"></h1>
+    </header>
+
+    <div class="name-div">
+      <form class="login-form hidden">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <input class="hidden" type="submit" value="Log In" />
+      </form>
+    </div>
+
+    <div class="todo-div">
+      <form id="todo-form">
+        <input type="text" placeholder="Write a To Do" required />
+      </form>
+    </div>
+
+    <div class="list-div">
+      <ul id="todo-list"></ul>
+    </div>
+
+    <div id="quote">
       <span></span>
       <span></span>
     </div>
@@ -42,5 +55,10 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/be7a613b0c.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
